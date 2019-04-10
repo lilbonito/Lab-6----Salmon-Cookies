@@ -13,20 +13,34 @@
     <h2>Salmon Cookies Sale Log by Location</h2>
     <ul id="ul2017"> 
       <li> This was added in HTML</li>
-    </ul>
+       <form id="cookie-form">
+          <fieldset>
+              <legend>Add a New Store</legend>
+              <label for="storename">Name:
+                <input name="storename" type= "text" required/>
+              
+              </label>
+              <label for="storeid">Store ID
+                  <input name="storeid" type= "text" required/>
+              </label>
 
-    <h2>First And Pike</h2>
-    <ul id="loc-first-and-pike"> </ul>
-    <h2>Seatac</h2>
-    <ul id="loc-seatac"> </ul>
-    <h2>Seattle Center</h2>
-    <ul id="loc-seattle-center"> </ul>
-    <h2>Capitol Hill</h2>
-    <ul id="loc-capitol-hill"> </ul>
-    <h2>Alki</h2>
-    <ul id="loc-alki"> </ul>
+              <label for="minimumcustomer">Minimum Customer
+                  <input name="minimumcustomer" type= "number" required/>
+                </label>
+
+                <label for="maximumcustomer">Maximum Customer
+                    <input name="maximumcustomer" type= "number" required/>
+                  </label>
+
+                  <label for="avgcookiesales"> Name:Average Cookie Sales
+                      <input name="avgcookiesales" type= "number" required/>
+                    </label>
+              
+          </fieldset>
+        </form>
+        <hr>
     <table id= "lox-cookie-table">
-
+   
 
     </table>
 

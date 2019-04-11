@@ -1,30 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel='stylesheet' href="style.css">
     <title>Salmon Cookies</title>
   </head>
   <body>
-    <table>
-        <tr><!--table row-->
-          <td><!--table element--> </td>
-        </tr>
-    </table>
     <h1></h1>
     <h2>Salmon Cookies Sale Log by Location</h2>
-    <ul id="ul2017"> 
-      <li> This was added in HTML</li>
        <form id="cookie-form">
           <fieldset>
               <legend>Add a New Store</legend>
               <label for="storename">Name:
                 <input name="storename" type= "text" required/>
               
-              </label>
-              <label for="storeid">Store ID
-                  <input name="storeid" type= "text" required/>
-              </label>
-
-              <label for="minimumcustomer">Minimum Customer
+                <label for="minimumcustomer">Minimum Customer
                   <input name="minimumcustomer" type= "number" required/>
                 </label>
 
@@ -35,16 +24,21 @@
                   <label for="avgcookiesales"> Name:Average Cookie Sales
                       <input name="avgcookiesales" type= "number" required/>
                     </label>
+                    <button id='submit'>Submit</button>
               
           </fieldset>
         </form>
         <hr>
-    <table id= "lox-cookie-table">
+
+    <table id= "lox-cookie-table" class="red-green">
         <tfoot id="lox-cookie-foot">
           
-          </tfoot>
+        </tfoot>
     </table>
-        
+        <button id="red-green"> Change Styles: Red and Green </button>
+        <button id="gray">Change Styles: Gray</button>
+        <button id="clear">Change Styles: Clear</button>
+      </button>
     <script src="app.js"></script>
   </body>
 </html>

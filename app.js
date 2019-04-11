@@ -1,10 +1,9 @@
 'use strict';
-
+var allShops = [];
 var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
-
 var referenceTable = document.getElementById('lox-cookie-table');
-
-
+var referenceTableFooter = document.getElementById('lox-cookie-foot');
+var hourlyCookieTotalsArray = []
 function getRandomNumber(minimum, maximum){
   return Math.floor(Math.random() * (maximum - minimum +1)) + minimum;
 }
@@ -16,6 +15,9 @@ function Store(id, minimumCustomer, maximumCustomer, avgCookiePerHr){
   this.cookiesSoldPerHourArray = [];
   this.cookieTotals = 0;
 
+  allShops.push(this);
+//}
+// Store.__prototype__.getCustomersPerHour = function() {
   this.getCustomersPerHour = function(){
     return getRandomNumber(this.minimumCustomer, this.maximumCustomer);
   };
@@ -83,6 +85,45 @@ var capitolHill = new Store('Capitol Hill', 20, 38, 2.3);
 var alki = new Store('Alki Beach', 2, 16, 4.6);
 
 
+function footcalculator(){
+  for(var c= 0; c < hours.length; c++){
+    var hourlyCookieTotals = 0;
+    for(var i = 0; i < allShops.length; i++){
+      hourlyCookieTotals += allShops[i].cookiesSoldPerHourArray[c];
+    }
+  hourlyCookieTotalsArray[c] = hourlyCookieTotals;
+  }
+}
+
+
+function tableFooter(){
+  footcalculator();
+
+  var trElement = document.createElement('tr');
+  var thElement = document.createElement('th');
+  thElement.textContent = 'Locations';
+  trElement.append(thElement);
+  for(var i = 0; i < hours.length; i++){
+    thElement = document.createElement('td');
+    thElement.textContent = hourlyCookieTotalsArray[i];
+    trElement.append(thElement);
+  }
+  //thElement = document.createElement('td');
+  //thElement.textContent = (footcalculator);
+  //trElement.append(thElement);
+
+  referenceTableFooter.append(trElement);
+}
+tableFooter();
+
+
+
+// for(var c = 0; c < hours.length ; c++){
+
+//   // columnSum = 0;
+// for(var i = 0; i < this.cookiesSoldPerHourArray.length; i++){
+
+
 
 
 
@@ -91,7 +132,8 @@ pikeStreet.cashDrop();
 seaTac.cashDrop();
 seattleCenter.cashDrop();
 capitolHill.cashDrop();
-
+alki.cashDrop();
+tableFooter();
 
 
 

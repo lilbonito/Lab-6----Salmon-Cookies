@@ -1,0 +1,161 @@
+
+body{
+    background-image: url("../img/pnwbg.jpg");
+    background-size: 200%;
+    background-repeat: no-repeat;
+}
+
+h1{
+    float: unset;
+    position: absolute;
+    left: 400px;
+    top: 150px;
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 1em;
+    font-size: 60px;
+}
+    
+.sales{
+    top: 20px;
+    margin-bottom: 300px;
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 1em;
+    font-size: 40px;
+    text-align: left;
+    font-weight: 900;
+}
+
+h4{
+    font-style: italic;
+    position: absolute;
+    font-size: 16px;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    float: center;
+    margin-top: 275px;
+    opacity: .85;
+}
+
+ #left{
+     margin-right: 24px;
+     border: 8px solid #db8700;
+     box-shadow: 10px 10px 53px -15px rgba(3,43,16,1);
+}
+
+#mid:hover + #welcome-text{
+    opacity: 1;
+}
+#mid{
+    border: 8px solid #db8700;
+    box-shadow: 10px 10px 53px -15px rgba(3,43,16,1);
+}
+#right{
+    margin-left: 24px;
+    border: 8px solid #db8700;
+    box-shadow: 10px 10px 53px -15px rgba(3,43,16,1);
+} 
+
+#welcome-text:hover{
+    opacity: 1;
+}
+
+#welcome-text{
+    margin-left: 75px;
+    text-shadow: -5px 5px 10px rgba(3,43,16,1);
+    position: absolute;
+    top: 40%;
+    width: 90%;
+    text-align: center;
+    opacity: 0;
+    transition: 1.0s;
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 1.5em;
+    font-size: 100px;
+    font-weight: 900
+}
+
+.fitbit{
+    isolation: isolate;
+    float:right;
+    position: absolute;
+    top: -10px;   
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 260px;
+    margin-left: -20;
+    box-shadow: 10px 10px 53px -15px rgba(3,43,16,1);  
+    opacity: .50;      
+}
+.info-sales{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 100px; 
+    margin-left: -20;
+    box-shadow: 10px 10px 53px -15px rgba(3,43,16,1);  
+    opacity: .50;
+         
+}
+
+#street{
+    margin-right: 100px;
+}
+#city{    
+}
+#phone{
+    margin-left: 100px;
+}
+
+fieldset{
+    position: absolute;
+    top: 200px;
+    left: 60px;
+    border:2px solid #db8700;
+    width: 200px;
+    font-size: 20;
+    background-color: rgba(3,43,16,.25);
+    box-shadow: 10px 10px 53px -15px rgba(3,43,16,1);  
+}
+td, tr{
+    border: 2px solid black;
+    font-size: 28px;
+    background-color: rgba(3,43,16,.25);
+    
+}
+table{
+    margin-top: 200px;
+    margin-bottom: 0px;
+    display: inline-block;
+    border: 6px solid #db8700;
+    box-shadow: 10px 10px 53px -15px rgba(3,43,16,1);  10 pts10 pts
+    Journal
+    Journal
+    Apr 12
+    1 pts
+    
+    Journal
+    Journal
+    Apr 12
+    1 pts
+    
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+button{
+    opacity: 0;
+}
+

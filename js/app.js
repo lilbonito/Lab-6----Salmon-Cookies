@@ -100,7 +100,7 @@ function tableFooter(){
   var trElement = document.createElement('tr');
   var thElement = document.createElement('th');
   var tdElement = document.createElement('td');
-  thElement.textContent = 'Locations';
+  thElement.textContent = '';
   trElement.append(thElement);
 
   for(var i = 0; i < hours.length; i++){

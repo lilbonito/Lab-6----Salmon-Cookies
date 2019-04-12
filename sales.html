@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel='stylesheet' href="style.css">
-    <title>Salmon Cookies</title>
+      <link href="reset.css" ref="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Fredericka+the+Great" rel="stylesheet">
+    <title>Salmon Cookies Sales</title>
   </head>
   <body>
-    <h1></h1>
-    <h2>Salmon Cookies Sale Log by Location</h2>
+    <header>
+      <h1 class= "sales">Check Out Our Sales!</h1>
+    </header>
+    
+    <table id= "lox-cookie-table" class="red-green">
        <form id="cookie-form">
           <fieldset>
-              <legend>Add a New Store</legend>
+            <legend>Add a New Store</legend>
               <label for="storename">Name:
-                <input name="storename" type= "text" required/>
-              
-                <label for="minimumcustomer">Minimum Customer
-                  <input name="minimumcustomer" type= "number" required/>
-                </label>
+              <input name="storename" type= "text" required/>
 
-                <label for="maximumcustomer">Maximum Customer
-                    <input name="maximumcustomer" type= "number" required/>
-                  </label>
+              <label for="minimumcustomer">Minimum Customer
+              <input name="minimumcustomer" type= "number" required/>
+              </label>
 
-                  <label for="avgcookiesales"> Name:Average Cookie Sales
-                      <input name="avgcookiesales" type= "number" required/>
-                    </label>
-                    <button id='submit'>Submit</button>
-              
-          </fieldset>
-        </form>
-        <hr>
+              <label for="maximumcustomer">Maximum Customer
+              <input name="maximumcustomer" type= "number" required/>
+              </label>
 
-    <table id= "lox-cookie-table" class="red-green">
-        <tfoot id="lox-cookie-foot">
-          
-        </tfoot>
+              <label for="avgcookiesales"> Name:Average Cookie Sales
+              <input name="avgcookiesales" type= "number" required/>
+              </label>
+              <button id='submit'>Submit</button>
+            </fieldset>
+          </form>
+        <tfoot id="lox-cookie-foot"></tfoot>
     </table>
-        <button id="red-green"> Change Styles: Red and Green </button>
+  </footer>
+  <nav class= "info-sales">
+    <h3 id= "street">1234 N Jane Doe Road</h3>      
+    <h3 id= "city">Seattle WA, 98711 </h3>     
+    <h3 id= "phone">206-505-1337</h3>
+  </nav>
+  </footer>
+        <!-- <button id="red-green"> Change Styles: Red and Green </button>
         <button id="gray">Change Styles: Gray</button>
         <button id="clear">Change Styles: Clear</button>
-      </button>
-    <script src="app.js"></script>
+      </button> -->
+    <script src="js/app.js"></script>
+    
   </body>
 </html>

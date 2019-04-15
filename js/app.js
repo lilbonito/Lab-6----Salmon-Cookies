@@ -129,13 +129,12 @@ function addNewStore(event){
   var referenceTableFooter = document.getElementById('lox-cookie-foot');
   referenceTableFooter.textContent = '';
   grandTotal = 0;
-  footCalculator();
   tableFooter();
 
 
 }
-  var cookieFormReference = document.getElementById('cookie-form');
-  cookieFormReference.addEventListener('submit', addNewStore);
+var cookieFormReference = document.getElementById('cookie-form');
+cookieFormReference.addEventListener('submit', addNewStore);
 
 
 

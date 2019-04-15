@@ -7,9 +7,15 @@
     <title>Salmon Cookies Sales</title>
   </head>
   <body>
-    <header>
-      <h1 class= "sales">Check Out Our Sales!</h1>
-    </header>
+      <header>
+          <nav class="nav-container">
+              <ul>
+                  <a href="index.html"><li>Home</li></a>
+                  <a href="merch.html"><li>Store</li></a>
+                  <a href="about.html"><li>About</li></a>
+                  <a href="sales.html"><li>Sales</li></a>
+              </ul>
+       </header>
     
     <table id= "lox-cookie-table" class="red-green">
        <form id="cookie-form">
@@ -27,7 +33,7 @@
               </label>
 
               <label for="avgcookiesales"> Name:Average Cookie Sales
-              <input name="avgcookiesales" type= "number" required/>
+              <input name="avgcookiesales" type= "float" required/>
               </label>
               <button id='submit'>Submit</button>
             </fieldset>

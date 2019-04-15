@@ -36,11 +36,17 @@ nav ul{
 nav li{
     margin-bottom: 20px;
     display:inline-block;
-    color: #999;
+    color: black;
     margin-top: 20px;
     font-size: 1.2em;
     margin-left: -25px;
     margin-right: 50px;
+}
+ul:hover{
+    font-weight: 900;
+    transition: 350ms;
+    text-shadow: -5px 5px 10px rgba(3,43,16,1);
+
 }
 
 h1{
@@ -53,14 +59,12 @@ h1{
     font-size: 60px;
 }
     
-.sales{
-    top: 20px;
-    margin-bottom: 300px;
+.page-title{
     font-family: 'Amatic SC', cursive;
-    letter-spacing: 1em;
-    font-size: 40px;
-    text-align: left;
-    font-weight: 900;
+    letter-spacing: .6em;
+    font-size: 60px;
+    float: left;
+    margin: 10px;
 }
 
 h4{
@@ -123,7 +127,7 @@ h4{
     float:right;
     position: absolute;
     display: inline-block;
-    top: -10px;   
+    top: 30px;   
 }
 
 .info{
@@ -181,7 +185,7 @@ td, tr{
     overflow: auto;
 }
 table{
-    margin-top: 150px;
+    margin-top: 100px;
     margin-bottom: 50px;
     height: 500px;
     display: inline-block;
@@ -220,7 +224,7 @@ table{
     position: absolute;
     vertical-align: 50%;
     margin-top: 50px;
-    bottom: -50px;
+    bottom: -100px;
     box-sizing: border-box;
     color: white;
     background-color: rgba(3,43,16,.75);
@@ -238,8 +242,58 @@ table{
     color: black;
     background-color: rgba(3,43,16,.25);
     transition: 350ms;
-    
+ 
+}    
+
+
+.family-container{
+    display: inline-block;
+    position: relative;
 }
+
+.about-us{
+    display: inline-block;
+    position: relative;
+    font-family: 'Amatic SC', cursive;
+    font-size: 38px;
+    float: left;
+    left: 150px;
+    top: 200px;
+}
+
+
+
+.about-family{
+    display: inline-block;
+    position: relative;
+    float: left;
+    height: 300px;
+    width: 600px;
+    top: 300px;
+    background-color: rgba(3,43,16,.25);
+    box-shadow: 10px 10px 53px -15px rgba(3,43,16,1);  
+    overflow: auto;
+    line-height: 1.6em;
+    
+}    
+
+#family-photo{
+    display: inline-block;
+    position: relative;
+    float: right;
+    bottom: 0px;
+    left: 150px;
+    border-radius: 50% 50%;
+    
+    
+
+}
+.chinook{
+    display:inline-block;
+    position: absolute;
+    float: left;
+    top: 100px;
+    left: 430px;
 
 
 
